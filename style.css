@@ -609,21 +609,25 @@ footer {
 /* About Section Styling */
 .about-content {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 4rem;
-    padding: 2rem 0;
+    gap: 2rem;
+    padding: 1rem;
+    text-align: center;
 }
 
 .profile-container {
-    flex-shrink: 0;
-    width: 300px;
-    height: 300px;
+    width: 320px;
+    height: 320px;
     position: relative;
-    border-radius: 20px;
+    margin: 0 auto;
+    border-radius: 30px;
     overflow: hidden;
-    background: rgba(255, 255, 255, 0.05);
-    box-shadow: 0 10px 30px rgba(76, 0, 255, 0.2);
+    background: rgba(10, 10, 10, 0.5);
+    box-shadow: 
+        0 0 30px rgba(76, 0, 255, 0.3),
+        inset 0 0 20px rgba(0, 255, 255, 0.2);
 }
 
 .profile-image {
@@ -631,7 +635,9 @@ footer {
     height: 100%;
     object-fit: cover;
     object-position: center;
-    border-radius: 20px;
+    border-radius: 30px;
+    transform: scale(0.95);
+    transition: transform 0.3s ease;
 }
 
 /* Profile Image Background Effect */
@@ -641,9 +647,10 @@ footer {
     inset: 0;
     background: linear-gradient(
         45deg,
-        rgba(76, 0, 255, 0.2),
-        rgba(0, 255, 255, 0.2)
+        rgba(76, 0, 255, 0.3),
+        rgba(0, 255, 255, 0.3)
     );
+    border-radius: 30px;
     pointer-events: none;
     z-index: 1;
 }
@@ -662,27 +669,33 @@ footer {
     }
 
     .profile-container {
-        width: 200px;
-        height: 200px;
-        margin: 0 auto;
-        border-radius: 15px;
+        width: 280px;
+        height: 280px;
+        border-radius: 25px;
+        margin: 2rem auto;
     }
 
     .profile-image {
-        border-radius: 15px;
+        border-radius: 25px;
     }
 
     .about-text {
         margin-top: 1rem;
-        padding: 0 1rem;
+        max-width: 90%;
+        margin: 0 auto;
     }
 }
 
 /* Extra Small Mobile Adjustments */
 @media (max-width: 380px) {
     .profile-container {
-        width: 180px;
-        height: 180px;
+        width: 260px;
+        height: 260px;
+        border-radius: 20px;
+    }
+
+    .profile-image {
+        border-radius: 20px;
     }
 }
 
