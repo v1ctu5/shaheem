@@ -696,6 +696,11 @@ footer {
 /* NFC Page Specific Styles */
 .nfc-hero {
     background: linear-gradient(rgba(10, 10, 10, 0.7), rgba(10, 10, 10, 0.7));
+    padding-top: 120px;
+}
+
+.nfc-hero h1.animate-text {
+    margin-top: 2rem;
 }
 
 .nfc-features {
@@ -1282,5 +1287,40 @@ input[type="tel"]:focus {
         padding: 0.6rem 1.2rem;
         font-size: 0.9rem;
         bottom: 1rem;
+    }
+} 
+
+/* Mobile Specific Adjustments for NFC page */
+@media (max-width: 768px) {
+    .nfc-hero {
+        padding-top: 100px;
+        min-height: auto;
+    }
+
+    .nfc-hero h1.animate-text {
+        font-size: 2rem;
+        margin-top: 1rem;
+        padding: 0 1rem;
+    }
+
+    .nfc-hero p.animate-text-delay {
+        font-size: 1rem;
+        padding: 0 1.5rem;
+        margin-top: 1rem;
+    }
+
+    .nfc-features {
+        margin-top: 2rem;
+    }
+}
+
+/* Extra Small Mobile Adjustments */
+@media (max-width: 380px) {
+    .nfc-hero {
+        padding-top: 90px;
+    }
+
+    .nfc-hero h1.animate-text {
+        font-size: 1.8rem;
     }
 } 
