@@ -822,6 +822,7 @@ footer {
     .project-links {
         flex-direction: column;
     }
+
 }
 
 /* Remove unused NFC button styles */
@@ -1289,59 +1290,6 @@ input[type="tel"]:focus {
         bottom: 1rem;
     }
 } 
-
-/* Mobile Specific Adjustments for NFC page */
-@media (max-width: 768px) {
-    .nfc-hero {
-        padding-top: 100px;
-        min-height: auto;
-    }
-
-    .nfc-hero h1.animate-text {
-        font-size: 2rem;
-        margin-top: 1rem;
-        padding: 0 1rem;
-    }
-
-    .nfc-hero p.animate-text-delay {
-        font-size: 1rem;
-        padding: 0 1.5rem;
-        margin-top: 1rem;
-    }
-
-    .nfc-features {
-        margin-top: 2rem;
-    }
-
-    /* New Mobile Service Button */
-    .mobile-service-btn {
-        display: inline-block;
-        padding: 0.8rem 1.5rem;
-        margin: 1.5rem auto;
-        background: linear-gradient(45deg, #4C00FF, #00FFFF);
-        color: #000;
-        text-decoration: none;
-        border-radius: 8px;
-        font-weight: 600;
-        transition: all 0.3s ease;
-        text-align: center;
-        width: 80%;
-        max-width: 300px;
-    }
-
-    .mobile-service-btn:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 5px 15px rgba(76, 0, 255, 0.3);
-    }
-
-    /* Hide on desktop */
-    @media (min-width: 769px) {
-        .mobile-service-btn {
-            display: none;
-        }
-    }
-}
-
 /* Extra Small Mobile Adjustments */
 @media (max-width: 380px) {
     .nfc-hero {
